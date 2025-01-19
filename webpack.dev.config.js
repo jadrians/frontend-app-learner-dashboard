@@ -21,5 +21,11 @@ config.plugins.push(
     ],
   }),
 );
-
+config.devServer.allowedHosts=[
+    'local.openedx.io',
+    'app.local.openedx.io',
+    'app.local.openedx.io:1996',
+    'local.openedx.io:1996',
+    'localhost'
+]
 module.exports = config;

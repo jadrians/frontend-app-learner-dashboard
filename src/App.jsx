@@ -91,7 +91,11 @@ export const App = () => {
               )}
           </main>
         </AppWrapper>
-        <FooterSlot />
+        <FooterSlot
+            slot="footer"
+            className="footer"
+
+        />
       </div>
     </>
   );
