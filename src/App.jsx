@@ -79,19 +79,22 @@ export const App = () => {
       </Helmet>
       <div>
         <AppWrapper>
-          <LearnerDashboardHeader />
+          <LearnerDashboardHeader/>
           <main>
             {hasNetworkFailure
-              ? (
-                <Alert variant="danger">
-                  <ErrorPage message={formatMessage(messages.errorMessage, { supportEmail })} />
-                </Alert>
-              ) : (
-                <Dashboard />
-              )}
+                ? (
+                    <Alert variant="danger">
+                      <ErrorPage message={formatMessage(messages.errorMessage, {supportEmail})}/>
+                    </Alert>
+                ) : (
+                    <Dashboard/>
+                )}
           </main>
         </AppWrapper>
-        <FooterSlot />
+        <div>
+          <img src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px"/>
+        </div>
+
       </div>
     </>
   );
