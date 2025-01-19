@@ -149,7 +149,6 @@ export const App = () => {
 
               </div>
               <div className="references">
-                <!--span>Built on <a href="http://open.edx.org">OpenEdX</a>.</span-->
                 <li style="display:inline;filter: invert(100%); ">
                   <a href="//www.facebook.com/mexicoXgob/" target="_blank">
                     <img alt="logo fb" src="https://sisadmin.mexicox.gob.mx/redessociales/facebook1.png" height="40px"
@@ -163,19 +162,6 @@ export const App = () => {
               </div>
             </footer>
 
-            <!-- Google tag (gtag.js) -->
-            <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z97Y3FJQ9H"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-
-              function gtag() {
-              dataLayer.push(arguments);
-            }
-
-              gtag('js', new Date());
-
-              gtag('config', 'G-Z97Y3FJQ9H');
-            </script>
           </div>
         </footer>
       </div>
