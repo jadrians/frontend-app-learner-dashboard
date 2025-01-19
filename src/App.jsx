@@ -90,10 +90,11 @@ export const App = () => {
                     <Dashboard/>
                 )}
           </main>
+          <div>
+            <img src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px"/>
+          </div>
         </AppWrapper>
-        <div>
-          <img src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px"/>
-        </div>
+
 
       </div>
     </>
