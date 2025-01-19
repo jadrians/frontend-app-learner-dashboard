@@ -84,7 +84,7 @@ export const App = () => {
             {hasNetworkFailure
                 ? (
                     <Alert variant="danger">
-                      <ErrorPage message={formatMessage(messages.errorMessage, {supportEmail})}/>
+                      <ErrorPage message={formatMessage(messages.errorMessage, {supportEmail})} />
                     </Alert>
                 ) : (
                     <Dashboard/>
@@ -92,7 +92,7 @@ export const App = () => {
           </main>
 
         </AppWrapper>
-          <Image src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px"/>
+          <Image src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px" />
 
 
       </div>
