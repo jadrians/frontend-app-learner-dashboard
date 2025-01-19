@@ -7,7 +7,7 @@ import { initializeHotjar } from '@edx/frontend-enterprise-hotjar';
 
 import { ErrorPage, AppContext } from '@edx/frontend-platform/react';
 import FooterSlot from '@openedx/frontend-slot-footer';
-import {Alert, Image} from '@openedx/paragon';
+import { Alert } from '@openedx/paragon';
 
 import { RequestKeys } from 'data/constants/requests';
 import store from 'data/store';
@@ -79,22 +79,18 @@ export const App = () => {
       </Helmet>
       <div>
         <AppWrapper>
-          <LearnerDashboardHeader/>
+          <LearnerDashboardHeader />
           <main>
             {hasNetworkFailure
-                ? (
-                    <Alert variant="danger">
-                      <ErrorPage message={formatMessage(messages.errorMessage, {supportEmail})} />
-                    </Alert>
-                ) : (
-                    <Dashboard/>
-                )}
+              ? (
+                <Alert variant="danger">
+                  <ErrorPage message={formatMessage(messages.errorMessage, { supportEmail })} />
+                </Alert>
+              ) : (
+                <Dashboard />
+              )}
           </main>
-
         </AppWrapper>
-          <Image src="https://sisadmin.mexicox.gob.mx/extramexicox/eduaprende.jpg" height="90px" />
-
-
       </div>
     </>
   );
