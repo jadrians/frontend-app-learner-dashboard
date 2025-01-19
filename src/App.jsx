@@ -91,11 +91,7 @@ export const App = () => {
               )}
           </main>
         </AppWrapper>
-        <FooterSlot
-            slot="footer"
-            className="footer"
-
-        />
+        <FooterSlot/>
       </div>
     </>
   );
