@@ -91,7 +91,7 @@ export const App = () => {
               )}
           </main>
         </AppWrapper>
-        <FooterSlot/>
+        <FooterSlot />
       </div>
     </>
   );
