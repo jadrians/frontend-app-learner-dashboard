@@ -48,13 +48,6 @@ exports[`CourseCardMenu render show dropdown show unenroll and enable email snap
       variant="primary"
     />
     <Dropdown.Menu>
-      <Dropdown.Item
-        data-testid="unenrollModalToggle"
-        disabled={false}
-        onClick={[MockFunction unenrollShow]}
-      >
-        Unenroll
-      </Dropdown.Item>
       <SocialShareMenu
         cardId="test-card-id"
         emailSettings={
