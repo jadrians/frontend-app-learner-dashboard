@@ -49,15 +49,7 @@ export const CourseCardMenu = ({ cardId }) => {
           alt={formatMessage(messages.dropdownAlt)}
         />
         <Dropdown.Menu>
-          {shouldShowUnenrollItem && (
-            <Dropdown.Item
-              disabled={isMasquerading}
-              onClick={unenrollModal.show}
-              data-testid={testIds.unenrollModalToggle}
-            >
-              {formatMessage(messages.unenroll)}
-            </Dropdown.Item>
-          )}
+
           <SocialShareMenu cardId={cardId} emailSettings={emailSettings} />
         </Dropdown.Menu>
       </Dropdown>
