@@ -6,6 +6,7 @@ import { logError } from '@edx/frontend-platform/logging';
 import { initializeHotjar } from '@edx/frontend-enterprise-hotjar';
 
 import { ErrorPage, AppContext } from '@edx/frontend-platform/react';
+import { FooterSlot } from '@edx/frontend-component-footer';
 import { Alert } from '@openedx/paragon';
 
 import { RequestKeys } from 'data/constants/requests';
@@ -79,7 +80,7 @@ export const App = () => {
       <div>
         <AppWrapper>
           <LearnerDashboardHeader />
-          <main>
+          <main id="main">
             {hasNetworkFailure
               ? (
                 <Alert variant="danger">
@@ -90,6 +91,7 @@ export const App = () => {
               )}
           </main>
         </AppWrapper>
+        <FooterSlot />
       </div>
     </>
   );
